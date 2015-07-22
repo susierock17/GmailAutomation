@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="72902" started-at="2015-07-22T14:29:16Z" finished-at="2015-07-22T14:30:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="72902" started-at="2015-07-22T14:29:16Z" finished-at="2015-07-22T14:30:29Z">
+      <class name="GmailAutomation">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:GmailAutomation@47f37ef1]" name="startBrowser" is-config="true" duration-ms="7572" started-at="2015-07-22T17:29:16Z" description="Init browser" finished-at="2015-07-22T17:29:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="FAIL" signature="attachEmotion()[pri:0, instance:GmailAutomation@47f37ef1]" name="attachEmotion" duration-ms="64756" started-at="2015-07-22T17:29:24Z" description="Check emotions" finished-at="2015-07-22T17:30:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null: lists don't have the same size expected [0] but found [3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null: lists don't have the same size expected [0] but found [3]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:372)
+	at org.testng.Assert.assertEquals(Assert.java:539)
+	at org.testng.Assert.assertEquals(Assert.java:516)
+	at GmailAutomation.attachEmotion(GmailAutomation.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachEmotion -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:GmailAutomation@47f37ef1]" name="stopBrowser" is-config="true" duration-ms="534" started-at="2015-07-22T17:30:29Z" description="Stop Browser" finished-at="2015-07-22T17:30:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- GmailAutomation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
